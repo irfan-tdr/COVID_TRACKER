@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Global from './src/components/Global';
 import Local from './src/components/Local';
+import TitleApp from './src/components/TitleApp';
 
 class App extends Component {
 
@@ -11,12 +12,14 @@ class App extends Component {
   render(){
     return (
       <View style= {styles.container}>
-        {/* <View style={styles.boxtitle}>
-            <TitleProject/>
-        </View> */}
+        <View style={styles.boxtitle}>
+        </View>
+        <View style={styles.boxtitle}>
+            <TitleApp/>
+        </View>
         <View style= {styles.box1}>
-          <View style={styles.subPlace}>
-              <Text style={styles.subText}>Global</Text>
+          <View style={styles.titlePlace}>
+              <Text style={styles.titleText}>Global</Text>
           </View>
           <Global/>
         </View>
@@ -35,17 +38,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    backgroundColor: '#fff',
+    backgroundColor: '#778899',
     alignItems: 'stretch',
     justifyContent: 'center',
   },
   boxtitle:{
-    flex:1,
+    flex:0.5,
     alignItems: 'center'
   },
   box1:{
     flex: 3,
-    backgroundColor: '#fff',
+    backgroundColor: 'lightslategray',
     alignItems: 'stretch',
     justifyContent: 'space-around'
   },
@@ -53,11 +56,11 @@ const styles = StyleSheet.create({
     flex: 10,
     backgroundColor: 'lightslategray'
   },
-  subText: {
+  titleText: {
     fontSize: 24,
-    fontWeight: 'normal'
+    fontWeight:'bold',
   },
-  subPlace: {
+  titlePlace: {
     alignItems: 'center',
     justifyContent: 'center'
   }

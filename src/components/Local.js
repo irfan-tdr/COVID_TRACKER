@@ -18,13 +18,13 @@ class Local extends React.Component{
                 <Text>{item.provinsi}</Text>
             </View>
             <View style= {styles.confirmedBox}>
-                <Text>{item.kasusPosi}</Text>
+                <Text style= {styles.textbox1}>{item.kasusPosi}</Text>
             </View>
             <View style= {styles.recoveredBox}>
-                <Text>{item.kasusSemb}</Text>
+                <Text style= {styles.textbox1}>{item.kasusSemb}</Text>
             </View>
             <View style= {styles.deathBox}>
-                <Text>{item.kasusMeni}</Text>
+                <Text style= {styles.textbox1}>{item.kasusMeni}</Text>
             </View>
             
         </View>
@@ -87,6 +87,9 @@ const styles = StyleSheet.create({
         color: 'black',
         fontWeight: "bold",
         alignItems: 'center'
+    },
+    textbox1:{
+        color: 'white',
     },
     box1: {
         height: 20,
