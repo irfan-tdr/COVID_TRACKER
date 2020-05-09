@@ -31,6 +31,7 @@ class Global extends React.Component{
 
     render(){
         return (
+
             <View style= {styles.container}>
                 <View style= {styles.confirmedBox}>
                     <Text style= {styles.textBox}>Positif</Text>
